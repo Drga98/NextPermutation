@@ -12,3 +12,21 @@ TEST(NextPermutationSuite, NextPermutationIsRightWithFisrtExampleVector){
 
     EXPECT_EQ(nums, res);
 }
+
+TEST(NextPermutationSuite, NextPermutationIsRightWithSecondExampleVector){
+
+    NextPermute nums = {3,2,1};
+    NextPermute res = {1,2,3};
+    nums.permute();
+
+    EXPECT_EQ(nums, res);
+}
+
+TEST(NextPermutationSuite, NextPermutationIsRightWithThirdExampleVector){
+
+    NextPermute nums = {1,1,5};
+    NextPermute res = {1,5,1};
+    nums.permute();
+
+    EXPECT_EQ(nums, res);
+}
